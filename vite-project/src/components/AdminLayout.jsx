@@ -108,9 +108,12 @@ export default function AdminLayout({ children }) {
         <Link to="/projects" className={linkClass("/projects")}>
           Projects
         </Link>
-        <Link to="/investment" className={linkClass("/investment")}>
-          Investment
+        <Link to="/investments" className={linkClass("/investments")}>
+          Investments
         </Link>
+        <Link to="/analytics" className={linkClass("/analytics")}>
+  Analytics 📊
+</Link>
       </div>
 
       {/* Content */}
