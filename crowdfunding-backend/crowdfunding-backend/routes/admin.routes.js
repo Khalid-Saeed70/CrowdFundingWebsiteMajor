@@ -66,8 +66,6 @@ import {
   toggleUserBlock,
   toggleUserVerify, // 🔥 ADDED
   getProjectInvestmentsAdmin,
-  getAdvancedAnalytics,
-  getAnalyticsData,
 } from "../controllers/admin.controller.js";
 
 import authMiddleware from "../middlewares/auth.middleware.js";
@@ -90,7 +88,5 @@ router.put("/users/:id/verify", authMiddleware, toggleUserVerify);
 
 // Investments
 router.get("/investments/:projectId", authMiddleware, getProjectInvestmentsAdmin);
-// ANalystics
-router.get("/analytics", authMiddleware, getAnalyticsData);
-router.get("/analytics/advanced", authMiddleware, getAdvancedAnalytics);
+
 export default router;
